@@ -2,13 +2,21 @@ GEM
   remote: https://rubygems.org/
   specs:
     byebug (11.1.3)
+    coderay (1.1.3)
     date (3.3.3)
+    fast_excel (0.4.1)
+      ffi (> 1.9, < 2)
+    ffi (1.15.5)
+    method_source (1.0.0)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
     open-uri (0.3.0)
       stringio
       time
       uri
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     racc (1.6.2)
     regexp_parser (2.7.0)
     rexml (3.2.5)
@@ -31,8 +39,10 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  fast_excel
   nokogiri
   open-uri
+  pry (~> 0.13.1)
   selenium-webdriver
   watir
 
